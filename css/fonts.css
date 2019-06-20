@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "RalewayBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "RalewayLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "RalewayThin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-Thin.ttf") format("truetype"); }
+@font-face {
+  font-family: "Madelyn";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Madelyn/Madelyn.ttf") format("truetype"); }
+@font-face {
+  font-family: "MadelynDoodle";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Madelyn/MadelynDoodles.ttf") format("truetype"); }
+@font-face {
+  font-family: "MadelynDoodleFill";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Madelyn/MadelynDoodlesFill.ttf") format("truetype"); }
+@font-face {
+  font-family: "MadelynFill";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Madelyn/MadelynFill.ttf") format("truetype"); }
+@font-face {
+  font-family: "Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PT_Sans/ptsans.woff2") format("woff2"), url("../fonts/PT_Sans/ptsans.woff") format("woff"), url("../fonts/PT_Sans/ptsans.ttf") format("truetype"); }
+@font-face {
+  font-family: "SansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PT_Sans/ptsansbold.woff2") format("woff2"), url("../fonts/PT_Sans/ptsansbold.woff") format("woff"), url("../fonts/PT_Sans/ptsansbold.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */

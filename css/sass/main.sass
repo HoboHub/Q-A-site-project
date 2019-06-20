@@ -1,0 +1,1398 @@
+@import "color.sass"
+
+body
+	color: $grey 
+	font-family: "SansBold", sans-serif
+	font-size: 15px
+	margin: 0
+	overflow-x: hidden
+
+h1
+	font-size: 20px
+
+button
+	color: $white
+	background-color: $btn
+	border: none
+
+blockquote
+	margin: 0
+	color: $white
+	font-family: "SansBold", sans-serif
+	font-size: 30px
+	p
+		margin: 0
+	cite
+		font-size: 20px
+		margin: 0
+		padding: 0
+
+a:hover
+	text-decoration: underline
+
+.layout
+	width: 100%
+	height: 100%
+
+#wrapper
+	margin-left: 250px 
+	overflow: hidden
+	height: auto
+
+.profile_aside_column
+	height: 1070px !important
+.users_aside_column
+	height: 1850px !important
+.questions_aside_column
+	height: 2195px !important
+.faq_column
+	height: 1380px !important
+.forum_aside_column
+	height: 1770px !important
+
+header
+	padding: 10px 0
+	background-color: $toster1
+	box-shadow: inset 0 10px 20px -4px $toster1Dark
+
+.suggest
+	margin-left: 30px
+	margin-right: 30px
+	margin-top: 5px
+	.suggest_field
+		border: 0px
+		width: 550px
+		padding: 11px 15px
+		border-radius: 5px
+		background-color: $toster1Dark
+		outline: none
+		text-overflow: ellipsis
+		color: $light
+		font-family: "Sans", sans-serif
+		font-size: 15px
+		&:hover
+			background-color: $toster2
+		&:focus
+			text-align: left
+			background-color: $toster2
+		&::-moz-placeholder,
+		&:-moz-placeholder 
+		&:-ms-input-placeholder
+		&::placeholder
+			font-family: "Sans", sans-serif
+			text-align: center
+			color: $light
+			letter-spacing: 0.5px
+
+.logo_navbar
+	background-color: $toster1
+	margin: 0
+	padding: 5.5px
+	box-shadow: inset 0 25px 20px -20px $toster1Dark
+	.logo
+		text-align: center
+		margin: 0
+		padding: 0px
+
+nav
+	.header_menu
+		list-style-type: none
+		margin-top: 20px
+		padding: 0
+		float: right
+		li
+			display: inline-block
+			margin-right: 10px
+			a
+				color: $white
+
+nav > .header_menu > li + li
+	margin-left: 10px
+
+nav > .header_menu > li:last-child
+	margin-right: 200px
+
+
+.wrapper_navbar
+	width: 250px
+	height: 100%
+	position: fixed
+	background-color: $toster2
+	.navbar_cont
+		.user_panel
+			padding: 20px
+			width: 100%
+			height: 70px
+			border-bottom: 1px solid $toster1Dark
+			.user_panel_head
+				width: 250px - 40px
+				height: 50px
+				position: absolute
+				.user_panel_side
+					position: relative
+					left: 22%
+					top: 8px
+					width: 40px
+					margin: 0px
+					.user_panel_user_name
+						color: $white
+						font-size: 14px
+				.user_panel_avatar_bg
+					background-color: $btn
+					border-radius: 50px
+					width: 35px
+					height: 35px
+					position: absolute
+					overflow: hidden
+					box-shadow: 0px 1px 2px 0.5px $toster1Dark
+					.user_panel_avatar
+						position: relative
+						top: 5px
+						left: 0px
+
+.navbar_cont
+	.main_menu
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-top: 10px
+		.main_menu_item
+			height: 40px
+			line-height: 40px
+			.main_menu_link
+				width: 100%
+				padding: 0 25px
+				color: $toster3Light
+				&:hover
+					color: $light
+				.main_menu_icons
+					width: 20px
+					margin-right: 12px
+					margin-bottom: -5px
+
+.column_wrap
+	.column_main
+		float: left
+		.page
+			.page_header
+				height: 70px
+				width: 663px
+				padding: 0px 30px
+				.page_header_title
+					margin: 0
+					line-height: 3.8
+			.page_filters
+				position: absolute
+				.btn_place_filter
+					position: relative
+					left: 340px
+					top: -40px
+					padding: 10px 15px
+					background-color: transparent
+					color: $toster2
+					font-size: 13px
+					font-stretch: expanded
+					border: 1px solid $light
+					border-radius: 4px
+					outline: none
+					&:hover
+						color: $btn
+						border: 1px solid $btn
+				.page_filters_wrapper
+					.filter_menu
+						width: 295px
+						list-style-type: none
+						border-radius: 1px
+						margin: 0px
+						padding: 0px
+						margin: 0px -5px 0px 30px
+						border: 1px solid $light
+						border-radius: 4px
+						.filter_menu_item
+							display: inline-block
+							text-align: center
+							padding: 8px 0px 9px 0px
+							.filter_menu_link
+								padding: 10px 20px
+								margin: 0
+								font-size: 13px
+								font-stretch: expanded
+								color: $toster2
+								text-decoration: none
+								&:hover
+									color: $btn
+
+.active_btn
+	border: 1px solid $btn
+	border-radius: 2px
+	color: $btn !important
+
+.column_wrap
+	.aside_column
+		position: absolute
+		right: 0px
+		width: 300px
+		height: 2195px
+		float: right
+		background-color: $light
+		.panel_heading
+			margin: 0
+			height: 50px
+			.panel_heading_title
+				margin: 0px 20px
+				padding: 40px 0px 10px 0px
+				text-transform: uppercase
+				font-size: 13px
+			.panel_heading_content
+				margin: 0
+				padding: 0px 20px 0px 20px
+				.content_list
+					padding: 0
+					margin: 0
+					list-style-type: none
+					.content_list_item
+						position: relative
+						padding: 12px 0px
+						border-top: 1px solid $toster4
+						height: 80px
+						.user_summary
+							height: 30px
+							margin-top: -30px
+							.user_summary_avatar
+								display: block
+								position: relative
+								top: 38px
+								background-color: $toster1
+								border-radius: 50px
+								width: 35px
+								height: 35px
+								margin-right: 10px
+							.user_summary_desc
+								position: relative
+								padding-left: 45px
+								.user_summary_name
+									color: $grey
+								.user_summary_counters
+									color: $toster2Light
+									opacity: 0.8
+									font-family: "Sans", sans-serif
+									font-size: 13.6px
+									font-stretch: expanded
+									.inline_list_sidebar
+										list-style-type: none
+										padding: 0
+										.inline_list_item
+											display: inline-block
+											&:last-child
+												margin-left: 5px
+			
+.place_down_mnu
+	z-index: 999
+	position: absolute
+	left: 325px
+	top: 45px
+	text-align: center
+	width: 150px
+	border: 1px solid $light
+	border-radius: 10px
+	background-color: $white
+	.place_search
+		.place_search_field
+			background-color: $light
+			color: $btn
+			border: none
+			padding: 5px 0px 5px 0px
+			width: 148px
+			font-family: "SansBold", sans-serif
+			text-align: center
+			outline: none
+			border-radius: 10px 10px 0px 0px
+			&::-moz-placeholder,
+			&:-moz-placeholder 
+			&:-ms-input-placeholder
+			&::placeholder
+				font-family: "Sans", sans-serif
+				font-size: 13px
+				font-stretch: expanded
+				text-align: center
+				letter-spacing: 0.5px
+
+	.place_menu
+		.place_list
+			list-style-type: none
+			margin: 0
+			padding: 0
+			.place_list_item
+				padding: 5px 0px 5px 0px
+				&:hover
+					background-color: $extraLight
+				.place_list_link
+					color: $toster2
+					text-decoration: none 
+					font-family: "SansBold", sans-serif
+					font-stretch: expanded
+					font-size: 13px
+					padding: 8px 55px
+
+.place_list_item:last-child
+	&:hover
+		border-radius: 0px 0px 10px 10px
+
+.hidden_mnu
+	display: none
+
+.btn_hover
+	color: $btn !important
+	border: 1px solid $btn !important
+
+.page_body
+	width: 713px
+	padding: 0px 30px 0px 30px
+	margin-top: 70px
+	.content_list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		.content_list_item
+			padding: 30px 0px 30px 0px
+			position: relative
+			.question
+				width: 650px
+				border-bottom: 1px solid $light
+				line-height: 1.3
+				&:first-child
+					height: 130px
+				.question_content
+					.question_content_fluid
+						margin-right: 50px
+						padding-right: 30px
+						.question_tags
+							.question_tags_list
+								list-style-type: none
+								padding: 0
+								.question_tags_list_item
+									display: inline-block
+									.question_tags_list_link
+										text-transform: uppercase
+										color: $btn
+										font-size: 12px
+										margin-right: 10px
+
+.content_list_item
+	#answered
+		.question_answer_count
+			.mini_counter
+				position: relative
+				top: -40px
+				color: $answered
+				.check_mark
+					position: relative
+					top: 40px
+					right: 30px
+					font-size: 30px
+				.mini_counter_value
+				.mini_counter_ans
+					padding: 5px
+
+.question_content
+	.question_content_fluid										
+		.question_title
+			margin: 0
+			margin-bottom: 6px
+			.question_title_link
+				color: $grey
+
+
+.question_attrs
+	color: $toster2Light
+	opacity: 0.8
+	font-family: "Sans", sans-serif
+	font-size: 13.6px
+	font-stretch: expanded
+	padding: 0
+	.inline_list_item
+		display: inline-block
+		margin-right: 10px
+
+.content_list_item
+	position: absolute
+	.question
+		.question_answer_count
+			position: relative
+			left: 590px
+			top: -50px
+			.mini_counter
+				color: $toster3Light
+				text-decoration: none
+				.mini_counter_value
+					font-size: 20px
+					padding: 0px 20px 0px 20px
+					display: block
+				.mini_counter_ans
+					font-family: "Sans"
+
+.page_body
+	.paginator
+		padding: 20px 0px 5px 0px
+		margin: 0
+		text-align: center
+		margin-bottom: 50px
+		.paginator_item
+			list-style-type: none
+			display: inline-block
+			.paginator_item_link
+				padding: 7px 10px
+				font-size: 17px
+
+.paginator_item_next, .paginator_item_prev
+	font-size: 17px
+	.arrow_icon
+		font-size: 11px !important
+		font-weight: 1px
+
+.paginator_item_next
+	margin-left: 10px
+.paginator_item_prev
+	margin-right: 10px
+
+#current
+	color: $toster1 !important
+
+.layout_footer
+	margin-left: 250px
+	margin-right: 300px
+	padding: 0px 30px
+	.layout_fotter_inner
+		border-top: 1px solid $light
+		.menu_services
+			float: left
+			margin-top: 15px
+			.footer_menu
+				list-style-type: none
+				padding: 0
+				margin-top: 0
+				.footer_menu_item
+					display: inline-block
+					.footer_menu_item_link
+						color: $toster2Light
+						font-size: 14px
+						opacity: 0.6
+						.copyright
+							font-size: 12px
+
+.footer_menu > li + li
+	margin-left: 15px
+
+.menu_socials
+	float: right
+	margin-top: 15px
+	.footer_menu
+		padding: 0
+		margin-top: 0
+		.footer_menu_item
+			display: inline-block
+			list-style-type: none
+			.footer_menu_item_link
+				color: $toster2Light
+				opacity: 0.6
+
+
+.page
+	.page_header
+		.page_header_info
+			margin-top: 50px
+			padding-bottom: 15px
+			text-align: center
+			.page_header_image
+				display: block
+				margin: 15px 300px 0px 300px
+				width: 100px
+				height: 100px
+				border-radius: 50px
+				background-color: $light
+				overflow: hidden
+				#profile_pro_avatar
+					position: relative
+					top: 8px
+			.page_header_title
+				margin-left: 100px !important
+				height: 45px
+				line-height: 2.5 !important
+				font-size: 23px
+			.page_header_subtitle
+				padding: 0px
+				margin-left: 100px
+				color: $toster3Light
+				font-family: "Sans", sans-serif
+		.page_header_stats
+			padding: 0px 20px
+			width: 100%
+			.inline_list
+				text-align: center
+				height: 50px
+				padding: 0
+				margin: 0
+				margin-left: 100px
+				.inline_list_item
+					list-style-type: none
+					display: inline-block
+					margin-top: 10px
+					.vertical_line
+						position: relative
+						left: 85px
+						top: -45px
+						background-color: transparent
+						height: 45px
+						border-left: 1.5px solid $toster3Light
+						border-radius: 2px
+						opacity: 0.2
+					.mini_counter
+						color: $toster3Light
+						font-family: "Sans", sans-serif
+						text-decoration: none
+						z-index: 1000
+						.mini_counter_value
+							display: block
+							font-size: 20px
+							color: $btn
+							font-family: "SansBold", sans-serif
+					
+
+.section_profile_info
+	.about_user
+		font-family: "Sans", sans-serif
+		padding: 10px 0px 
+	.visited_places
+		padding-bottom: 10px
+		padding-top: 15px
+		.places_wrapper
+			height: 130px
+			.places_header
+				background-color: transparent
+				box-shadow: none
+				border-bottom: 1px solid $toster1
+			.places_tags
+				list-style-type: none
+				padding: 15px 0px
+				margin: 20px 0px
+				.place_tag
+					display: inline-block
+					.place_link
+						font-size: 14px
+						text-decoration: none
+						padding: 10px 10px
+						border: 1px solid
+						border-radius: 5px
+						&:hover
+							color: $mainLight
+
+.places_wrapper
+	.more_place_btn
+		position: relative
+		left: 340px
+		top: -55px
+		.more_place_link
+			font-family: "SansBold", sans-serif
+			font-size: 14px
+
+
+.profile_body
+	margin-top: 50px
+	border-top: none
+	margin-top: 0
+	opacity: 0.8
+	.content_list_header
+		background-color: transparent
+		box-shadow: none
+	.content_list
+		border-top: 1px solid $grey
+		.content_list_item
+			height: 150px
+		.content_list_item:last-child
+			.question
+				border: 0px
+
+.user_level_wrap
+	.user_level
+		.user_level_head
+		.user_level_progress_wrap
+			padding: 20px 0px
+			.progressbar
+				.progressbar_wrap
+					.progressbar_line
+						background-color: $btn
+						opacity: 0.4
+						width: 100%
+						height: 20px
+						border-radius: 10px
+						.fill
+							background-color: $mainLight
+							border-radius: 10px
+							height: 100%
+							width: 20%
+							opacity: 1
+
+
+.profile_footer
+	margin-top: 0px
+
+.page_header_stats
+	.inline_list > li + li
+		margin-left: 50px
+	.inline_list_item:last-child
+		margin-left: 60px
+
+
+.page
+	.profile_page_header
+		height: 270px !important
+	.page_tabs_wrap
+		.tabs
+			list-style-type: none
+			border-top: 1px solid $light
+			border-bottom: 1px solid $light
+			li + li
+				margin-left: 30px
+			.tabs_item
+				display: inline-block
+				padding: 12px 0px
+				.tabs_link
+					text-transform: uppercase
+					color: $toster2Light
+					opacity: 0.7
+					text-decoration: none
+					font-size: 13.5px
+					padding: 12px 0px
+					&:hover
+						color: $grey
+						opacity: 1
+
+.active_tab
+	border-bottom: 2px solid $grey
+	color: $grey
+	opacity: 1 !important
+
+
+.users_page_body
+	.content_list_cards_users 
+		text-align: center
+		padding: 0px 0px 30px 0px
+		.content_list_item
+			width: 220px
+			height: 280px
+			display: inline-block
+			//border: 1.5px solid $light
+			//border-radius: 5px
+			.card
+				margin: 0
+				padding: 10px
+				border: 1.5px solid $light
+				border-radius: 8px
+				.card_head
+					text-align: center
+					padding-bottom: 10px
+					.card_head_status
+						margin: 0
+						color: $toster2Light
+						opacity: 0.4
+						margin-top: -5px
+					.card_head_image
+						display: block
+						width: 80px
+						height: 80px
+						background-color: $toster1
+						border-radius: 50px
+						margin: 0px 60px
+						overflow: hidden
+						background-color: $light
+						#megapro_avatar
+							position: relative
+							top: 6px
+						#pro_avatar
+							position: relative
+							top: 8px
+						#new_avatar
+							position: relative
+							top: 6px
+					.card_head_title
+						margin: 0
+						padding: 10px 0px 0px 0px
+						.card_head_title_link
+							color: $grey
+
+.users_page_body
+	margin: 0
+	.content_list_cards_users 
+			.content_list_item
+				padding: 0
+				margin: 20px
+				.card > .card_stats
+					padding: 15px 0px
+					border-top: 1px solid $light
+					border-bottom: 1px solid $light
+					.inline_list_card
+						list-style-type: none
+						padding: 0px 5px
+						.inline_list_item
+							display: inline-block
+							&:first-child
+								margin-right: 5px
+							.card_ans_counter
+								font-size: 16px
+								color: $mainLight
+							.card_quest_counter
+								color: $toster2Light
+								font-family: "Sans", sans-serif
+								text-decoration: none
+
+.content_list_cards_users 
+		.content_list_item
+			.card > .card_rate
+				padding: 10px 0px
+				.card_rate_level
+					color: $toster2
+					opacity: 0.9
+					font-family: "Sans", sans-serif
+					strong
+						font-family: "SansBold", sans-serif
+						font-size: 17px
+						color: $grey
+						opacity: 1
+				.progress
+					.progress_bar
+						width: 195px
+						height: 20px
+						background-color: $light
+						border-radius: 20px
+						margin-top: 10px
+						.fill
+							width: 150px
+							height: 100%
+							background-color: $btn
+							border-radius: 20px
+
+
+
+.blog_wrapper
+	margin: 0
+	overflow: hidden
+	height: auto
+	.blog_header
+		background-color: $extraLight !important
+		height: 150px
+		width: 100%
+		padding: 20px 20px
+		.header_logo_wrapper
+			position: absolute
+			.header_logo
+				svg
+					width: 100px
+					height: 100px
+		.blog_header_menu_wrapper
+			.header_menu
+				margin: 0
+				margin-right: 100px
+				padding: 40px 0px 30px 0px
+				.header_menu_item
+					.header_menu_link
+						color: $answered
+						font-size: 16px
+
+.blog_wrapper
+	.column_wrap
+		.blog_aside_colum
+			background-color: transparent
+			margin-top: 120px
+			height: 900px !important
+		.blog_column_main
+			width: 76%
+			.page
+				.page_header
+				.page_filters
+					.page_filters_wrapper
+						.blog_filter_menu
+							width: 191px
+					.blog_btn_place_filter
+						left: 250px
+					.blog_place_down_mnu
+						left: 235px
+
+.blog_wrapper
+	.header_user_panel
+		position: relative
+		right: -550px
+		top: -10px
+		float: right
+		.header_notify
+			position: relative
+			top: 50px
+			right: 70px
+			display: inline-block
+			font-size: 20px
+			&:first-child
+				margin-right: 10px
+			.header_answers
+				color: $like
+			.header_messages
+				color: $like
+		.header_user_container
+			z-index: 20
+			margin-top: 10px
+			.header_user_block
+				.header_user_circle
+					z-index: 20
+					.header_user_avatar
+						overflow: hidden
+						filter: drop-shadow(0px 5px 10px $toster3Light)
+						.user_avatar
+							display: block
+							background-color: $light
+							width: 50px
+							height: 50px
+							border-radius: 50px
+							.user_profile_pro_avatar
+
+
+.header_user_container
+	.header_user_menu
+		z-index: 2
+		display: none
+		width: 300px
+		height: 300px
+		position: absolute
+		right: -10px
+		top: 25px
+		background-color: $white
+		box-shadow: 0px 2px 10px 2px $light
+		transition-duration: 1s
+		.header_user_menu_content
+			padding: 5px 20px 20px
+			.header_user_menu_content_fluid
+
+.header_user_menu
+	overflow: hidden
+	.header_user_menu_content
+		.header_user_menu_content_fluid
+			.opened_user_menu
+				list-style-type: none
+				padding: 0
+				display: inline-block
+				.opened_user_menu_item
+					height: 50px
+					width: 280px	
+					padding: 0
+					margin-bottom: 5px
+					.opened_user_menu_link
+						text-decoration: none
+						.opened_user_menu_icons
+							width: 40px
+							fill: $light
+						span
+							position: relative
+							top: -15px
+							left: 10px
+							color: $grey
+
+.opened_user_menu_item:hover
+	.opened_user_menu_link
+		.opened_user_menu_icons
+			fill: $like !important
+
+.header_user_menu
+	.exit
+		.exit_link
+			position: relative
+			top: -65px
+			left: 235px
+			font-family: "Sans", sans-serif
+			color: $like
+
+
+
+.header_user_container:hover
+	.header_user_menu
+		display: block
+
+.page
+	.blog_page_body
+		margin: 0
+		padding: 0 10px 0px 20px 
+		margin-top: 70px
+		width: 100%
+		.blog_content_list
+			margin-bottom: 50px
+			.blog_content_list_item
+				display: inline-block
+				margin: 10px
+				padding: 0
+				box-shadow: 0px 2px 10px 0px $toster4
+				.note
+					width: 280px
+					background-color: $extraLight
+					.note_content
+						padding: 20px
+						.note_content_fluid
+							.note_author
+								padding-bottom: 20px
+								.note_icon_wrapper
+									display: block
+									background-color: $white
+									border-radius: 100%
+									width: 30px
+									height: 30px
+									overflow: hidden
+									box-shadow: 0px 1px 4px 2px $toster4
+									#new_avatar
+										position: relative
+										top: 3px
+								.note_details
+									margin-top: -24px
+									margin-left: 40px
+									.author_name
+										font-family: "Sans", sans-serif
+										color: $grey
+							.note_preview
+								margin: 0px 0px 40px 0px
+								.note_preview_link
+									color: $grey
+									font-family: "Sans", sans-serif
+									text-decoration: none
+									transition-duration: .2s
+									&:hover
+										color: $like
+							.note_img_wrapper
+								overflow: hidden
+								height: 200px
+								width: 280px
+								.note_img
+									position: absolute
+									left: 0
+									overflow: hidden
+									height: 200px
+									width: 280px
+									img
+										width: 100%
+							.note_title
+								margin: 0
+								margin: 20px 0px 10px 0px
+								font-size: 20px
+								.note_title_link
+									color: $answered
+									text-decoration: none
+							.note_attrs
+								list-style-type: none
+								padding: 0
+								li + li
+									margin-left: 8px
+								.inline_list_item
+									display: inline-block
+									span
+										font-size: 14px
+										font-family: "Sans", sans-serif
+										color: $toster2Light
+									.note_comments
+									.note_puplish_time
+									.note_likes
+										i
+											color: $like
+
+.blog_footer
+	margin: 0
+	.layout_fotter_inner
+		position: absolute
+		width: 880px
+
+
+
+.about_wrapper
+	margin: 0
+	overflow: hidden
+	height: auto
+	.about_header
+		//background-color: $toster1 !important
+		//background-image: url("../img/about_bg.jpg")
+		//background-repeat: no-repeat
+		//background-size: 100%
+		height: 610px
+		width: 100%
+		padding: 20px 20px
+		.header_logo_wrapper
+			position: absolute
+			z-index: 113
+			.header_logo
+				svg
+					width: 100px
+					height: 100px
+					fill: $white
+		.about_header_menu_wrapper
+			.header_menu
+				margin: 0
+				text-align: right
+				padding: 10px 0px
+				.header_menu_item
+					&:last-child
+						margin-right: 40px
+					.header_menu_link
+						color: $white
+						font-size: 16px
+						font-family: "Sans", sans-serif
+
+.header_content_wrapper
+	margin-top: 200px
+	.header_content
+		padding: 20px 250px
+
+
+.header_content_fluid
+	.header_quote
+		text-align: center
+		border-left: 5px solid $like
+		.quote_text
+		cite
+
+.about_page
+	padding-top: 50px
+	.about_page_header
+	.about_page_body
+		margin: 0
+		width: 100%
+		padding: 0px 30px 0px 40px 
+		.about_content_list
+			.about_content_list_item
+				display: inline-block
+				padding: 5px
+				.article
+					background-color: $light
+					width: 280px
+					height: 400px
+					overflow: hidden
+					transition-duration: .2s
+					&:hover
+						transform: scale(1.05)
+						img
+							transform: scale(0.9)
+					.article_content
+						padding: 20px
+						.article_content_fluid
+							.article_img_wrapper
+								position: relative
+								top: -20px
+								left: -20px
+								width: 280px
+								height: 180px
+								overflow: hidden
+								.article_img
+									img
+										transition-duration: 0.2s
+										width: 120%
+										position: relative
+										left: -20px
+										top: -20px
+							.article_title
+								margin: 0
+								margin-top: -10px
+								.article_title_link
+									color: $grey
+									font-size: 19px
+									text-decoration: none
+							.article_preview
+								margin: 5px
+								.article_preview_link
+									color: $grey
+									font-family: "Sans", sans-serif
+									text-decoration: none
+									transition-duration: 0.1s
+									&:hover
+										color: $like
+							.article_attrs
+								position: relative
+								top: 10px
+								list-style-type: none
+								padding: 0
+								text-align: right
+								.inline_list_item
+									color: $toster3Light
+									opacity: 0.9
+									font-family: "Sans", sans-serif
+									.article_views
+
+.about_page
+	.about_paginator
+		margin-top: 20px
+
+
+.who_we_wrapper
+	height: 610px
+	width: 100%
+	.who_we_header
+		//background-color: $grey
+		//background-image: url("../img/bg1.jpg")
+		//background-repeat: no-repeat
+		//background-size: cover
+		width: 100%
+		height: 100%
+		.header_logo_wrapper
+			.header_logo
+				position: absolute
+				left: 20px
+				top: 20px
+				svg
+					fill: $white
+					width: 100px
+		.who_we_header_menu_wrapper
+			.header_menu
+				margin: 0
+				padding: 30px 0px
+				.header_menu_item
+					&:last-child
+						margin-right: 60px
+					.header_menu_link
+						font-family: "Sans", sans-serif
+		.header_content_wrapper
+			margin: 0
+			.header_content
+				.header_content_fluid
+					position: relative
+					top: 200px
+					.header_quote
+						text-align: center
+						//filter: drop-shadow(0px 0px 5px $grey)
+						text-shadow: 0px 0px 10px black
+						.quote_text
+						cite
+							text-align: left
+		
+.who_we_wrapper
+	.column_wrap
+		.column_main
+			.who_we_page
+				.who_we_page_header
+					.page_header_title
+						padding: 10px 0px
+				.who_we_page_body
+					width: 100%
+					margin-top: 30px
+					padding: 0px 40px
+					.who_we_content_list
+						margin-bottom: 40px
+						.who_we_content_list_item
+							display: inline-block
+							margin-right: 0px
+							width: 270px
+							margin: 0px 10px
+							padding-bottom: 0px
+							.worker_wrapper	
+								background-color: $light
+								border-bottom: 2px solid $like
+								width: 250px
+								padding: 10px
+								margin: 0px
+								.worker_fluid
+									.worker_img_wrapper
+										width: 150px
+										height: 150px
+										border-radius: 100px
+										overflow: hidden
+										margin-left: 17.5%
+										.worker_img
+											img
+												width: 150%
+												position: relative
+												right: 30px
+									.worker_content
+										text-align: center
+										.worker_name
+											padding: 10px 0px 3px 0px
+											.worker_name_content
+												color: $like
+												margin: 0
+												opacity: 0.9
+										.worker_status
+											.worker_status_content
+												color: $toster3Light
+												margin: 0
+												padding-bottom: 10px
+												font-family: "Sans", sans-serif
+										.worker_descr
+											padding: 0px 10px
+											padding-bottom: 20px
+											.worker_descr_content
+												margin: 0
+												font-family: "Sans", sans-serif
+												color: $toster3Light
+												opacity: 0.8
+												span
+													color: $like
+													opacity: 1
+													font-family: "SansBold", sans-serif
+
+.for_who_wrapper
+	height: 610px
+	width: 100%
+	.for_who_header
+		.header_logo_wrapper
+			.header_logo
+				position: absolute
+				left: 20px
+				top: 20px
+				svg
+					fill: $white
+					width: 100px
+		.for_who_header_menu_wrapper
+			.header_menu
+				margin: 0
+				padding: 30px 0px
+				.header_menu_item
+					&:last-child
+						margin-right: 60px
+					.header_menu_link
+						font-family: "Sans", sans-serif
+		.header_content_wrapper
+			margin: 0
+			.header_content
+				.header_content_fluid
+
+
+.for_who_wrapper
+	.column_wrap
+		.column_main
+			.for_who_page
+				.for_who_page_quote
+					width: 50%
+					padding: 10px 20px
+					margin-left: 20px
+					margin-top: 20px
+					border-left: 2px solid $like
+					.page_quote
+						color: $grey
+						font-size: 15px
+						.quote_text
+							padding-bottom: 10px
+						cite
+							padding: 10px 0px
+							font-size: 13px
+				.for_who_page_header
+					.page_header_title
+				.for_who_page_body
+					width: 100%
+					margin: 70px 40px 10px 50px
+					.for_who_content_list
+						margin-bottom: 50px
+						.for_who_content_list_item
+							display: inline-block
+							margin: 10px
+							width: 250px
+							height: 450px
+							background-color: $light
+							padding: 0
+							overflow: hidden
+							transition-duration: 0.5s
+							.for_who_review_wrapper
+								padding: 20px 20px
+								.for_who_review_fluid
+									.review_img
+										position: relative
+										top: -50px
+										left: -20px
+										display: none
+										img
+											width: 160%
+									.review_content
+										position: relative
+										display: none
+										.content_header
+											color: $like
+										.content_text
+											color: $toster3Light
+											font-family: "Sans", sans-serif
+
+.review_active
+	display: block !important
+
+
+.faq_body
+	margin-top: 20px
+	.content_list
+		.content_list_item
+			.question
+				.question_content
+					padding: 0px 20px
+					.question_content_fluid
+						margin: 0
+						.question_title
+							.question_title_link
+						.question_cont
+							font-family: "Sans", sans-serif
+							color: $toster3Light
+							line-height: 1.5
+							margin: 0
+							padding-top: 10px
+
+.faq_body
+	.content_list
+		.content_list_item
+			.question
+				.arrow_btn
+					color: $grey
+					cursor: pointer
+					position: absolute
+					top: 30px
+					left: 500px
+					font-size: 25px
+
+.hidden_quest
+	display: none
+
+
+
+//forum.html
+
+.forum_page_body
+	.content_list
+		.content_list_item
+			padding: 20px 0px
+			.item_fluid
+				border-left: 2px solid $like
+				padding: 30px 0px
+				.theme
+					.theme_content
+						.theme_content_fluid
+							.theme_title
+								.theme_title_link
+									color: $grey
+									padding: 0px 20px
+									&:hover
+										color: $like
+							.theme_attrs
+								list-style-type: none
+								position: relative
+								left: 300px
+								top: -45px
+								.inline_list_item
+									position: relative
+									left: 35px
+									display: inline-block
+									padding: 0px 15px
+									border-right: 1px solid $like
+									.theme_subs
+										color: $grey
+										font-family: "Sans", sans-serif
+									.theme_messages
+										color: $grey
+										font-family: "Sans", sans-serif
+							.last_message_content
+								padding: 0px 20px
+								color: $toster3Light
+								font-family: "Sans", sans-serif
+								margin-top: -25px
+								font-size: 13.5px
+								.last_message
+									margin: 0
+									.date
+									.time
+
+.forum_filters_wrapper
+	.forum_filter_menu
+		width: 191px !important
+		.filter_menu_item
+			.filter_menu_link
